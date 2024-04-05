@@ -66,7 +66,8 @@ def load_model_and_tokenizer(
     return model, tokenizer
 
 
-model, tokenizer = load_model_and_tokenizer(MODEL_PATH, trust_remote_code=True)
+#model, tokenizer = load_model_and_tokenizer(MODEL_PATH, trust_remote_code=True)
+model, tokenizer = load_model_and_tokenizer("/root/autodl-tmp/ChatGLM3/finetune_demo/output/checkpoint-2000/", trust_remote_code=True)
 
 
 class StopOnTokens(StoppingCriteria):
